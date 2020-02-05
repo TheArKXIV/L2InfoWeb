@@ -1,1 +1,70 @@
 /* Feuille de styles CSS */
+html{
+    background-color: #eeeeee;
+    font-family: sans-serif;
+}
+
+body{
+        background-color: white;
+        width: 600px;
+        margin: auto;
+        padding: 32px;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+p{
+    text-align: justify;
+}
+
+.lego{
+    color: #007bff;
+    font-style: italic;
+}
+
+a{
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.source{
+    font-size: 12px;
+    text-align: right;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    border: 3px solid;
+}
+
+th{
+    border: 1px solid;
+    border-bottom: 3px solid;
+}
+
+td{
+    border: 1px solid;
+}
+
+td,th{
+    padding: 10px;
+}
+
+#legonyc{
+    display: block;
+    margin: auto;
+}
+
+#legende{
+    text-align: center;
+}
+

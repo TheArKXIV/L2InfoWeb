@@ -2,34 +2,64 @@
 
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <title>LEGO WebStore - Acheter</title>
+        <link rel="stylesheet" href="../css/styles.css" />
     </head>
 
     <body>
-        LEGO WebStore
+        <header>
+            <h1 id="haut">LEGO WebStore</h1>
+        </header>
 
-        Produit
-        Acheter
+        <hr/>
 
-        Acheter des LEGO
+        <nav>
+            <ul>
+                <li><a href="./produit.html">Produit</a></li>
+                <li><a href="#">Acheter</a></li>
+            </ul>
+        </nav>
 
-        Remplissez le formulaire ci-dessous pour commander des LEGO !
+        <hr>
+        
+        <h2>Acheter des LEGO</h2>
 
-        Informations personnelles
-        Civilité: M. Mme.
-        Nom:
-        Prénom:
-        Mail:
+        <p>Remplissez le formulaire ci-dessous pour commander des <span class="lego">LEGO</span> !</p>
 
-        Informations de livraison
-        Quantité commandée: 1 boîte 2 boîtes 3 boîtes 4 boîtes 5 boîtes
-        Adresse de livraison:
+        <h3>Informations personnelles</h3>
+        <form>
+            <p>Civilité: <br/>
+                <input type="radio" name="genre"/> M.
+                <input type="radio" name="genre"/> Mme.<br/>
+            </p>
+            <p>Nom :<br/> <input type="text" name="nom"/></p>
+            <p>Prenom :<br/> <input type="text" name="prnm"/> </p>
+            <p>Mail : <br/> <input type="mail" name="mail"/> </p>
+            
+            <h3>Informations de livraison</h3>
+            <p>Quantité commandée : </p>
+            <select name="nbBoites">
+                <option value="1">1 Boîte</option>
+                <option value="2">2 Boîtes</option>
+                <option value="3">3 Boîtes</option>
+                <option value="4">4 Boîtes</option>
+                <option value="5">5 Boîtes</option>
+            </select>
+            <p>Adresse de livraison: </p>
+            <textarea name="AddrLiv" rows="4" cols="20"></textarea>
 
-        Confirmation
-        J'ai relu ma commande et certifie que ces informations sont correctes.
+            <h3>Confirmation</h3>
+            <p><input type="checkbox" name="Certif"/> J'ai relu ma commande et certifie que ces informations sont correctes.</p>
+            <input type="submit" value="Confirmer ma Commande" />
 
-        Retour en haut de page
-        TP1 : Découverte de HTML et CSS
-        L2 Développement Web - 2018
+        </form>    
+        <hr>
+
+        <footer>
+            <p><a href="#haut">Retour en haut de page</a></p>
+            <p>TP1 : Découverte de HTML et CSS</p>
+            <p>L2 Développement Web - 2020</p>
+        </footer>
     </body>
 </html>
