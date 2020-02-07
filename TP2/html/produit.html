@@ -12,6 +12,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    name="viewport"/>
+
   </head>
 
   <body>
@@ -19,10 +23,10 @@
     <div class="container p-4">
       <!-- Développer la fiche produit ici -->
       <div class="row">
-        <div class="col-8">
+        <div class="col-lg-8">
             <img src="../img/produit_newyork_0.jpeg" alt="Boite Legos New York"/>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4">
             <h3>LEGO Architecture <br/> New York City</h3>
             <hr/>
             <p id="prix">49.99€</p>
@@ -36,19 +40,19 @@
               <button type="button" class="btn btn-outline-dark btnpls">+</button>
             </div>
             <div class="btns text-right">
-                <a><button type="button" class="btn btn-primary btn-lg addpnr">Ajouter au panier <i class="fas fa-cart-plus"></i></button></a>
+                <a href="#"><button type="button" class="btn btn-primary btn-lg addpnr">Ajouter au panier <i class="fas fa-cart-plus"></i></button></a>
             </div>
           </div>
         </div>
         <div class="row-8"></div>
-          <div class="col-2"><img src="../img/produit_newyork_0.jpeg" alt="Boite Legos New York" class="mini"/></div>
-          <div class="col-2"><img src="../img/produit_newyork_1.jpeg" alt="Boite Legos New York" class="mini"/></div>
-          <div class="col-2"><img src="../img/produit_newyork_2.jpeg" alt="Boite Legos New York" class="mini"/></div>
-          <div class="col-2"><img src="../img/produit_newyork_3.jpeg" alt="Boite Legos New York" class="mini"/></div>       
+          <div class="col-lg-2"><img src="../img/produit_newyork_0.jpeg" alt="Boite Legos New York" class="mini"/></div>
+          <div class="col-lg-2"><img src="../img/produit_newyork_1.jpeg" alt="Boite Legos New York" class="mini"/></div>
+          <div class="col-lg-2"><img src="../img/produit_newyork_2.jpeg" alt="Boite Legos New York" class="mini"/></div>
+          <div class="col-lg-2"><img src="../img/produit_newyork_3.jpeg" alt="Boite Legos New York" class="mini"/></div>       
       </div>
       <hr/>
       <div class="row">
-        <div class="col-8">
+        <div class="col-lg-8">
           <h3>Description du produit</h3>
 
           <p>Fêtez la diversité architecturale de New York avec ce modèle détaillé en briques
@@ -75,10 +79,37 @@
               <li>Mesure 26 cm de haut, 25 cm de large et 4 cm de profondeur.</li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col-lg-4">
           <h3>Avis</h3>
-
-          <p>Nous afficherons les avis des utilisateurs ici.</p>
+          <table>
+            <tr>
+              <td>
+                <img src="../img/avatar.png" class="avatar">
+                <p class="nom">Pierre</p>
+                <p class="date">26/12/2017</p>
+                <br/>
+                <p class="avis">Construction trés agréable, les batiments sont beaux une fois terminés.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../img/avatar.png" class="avatar">
+                <p class="nom">Paul</p>
+                <p class="date">26/12/2017</p>
+                <br/>
+                <p class="avis">Le set est génial !!!!</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="../img/avatar.png" class="avatar">
+                <p class="nom">Jacques</p>
+                <p class="date">26/12/2017</p>
+                <br/>
+                <p class="avis">Si vous aimez New York et les LEGO, foncez !</p>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>    
