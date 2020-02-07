@@ -1,1 +1,40 @@
 /* Feuille de styles */
+p{
+    text-align: justify;
+}
+
+img{
+    margin: auto;
+    display: block;
+}
+
+.mini{
+    width:100%;
+    height: auto;
+}
+
+.mini:hover{
+    border: 6px solid;
+    border-color: #ddd;
+}
+
+#prix{
+    font-size: 2.5em;
+}
+
+.alert{
+    text-align: right;
+}
+
+.btns{
+    margin-bottom: 10px;
+}
+
+.btns .btnpls{
+    margin-right: 3px;
+    font-size: 0.8em;
+}
+
+.btns .addpnr{
+    font-size: 1em;
+}
