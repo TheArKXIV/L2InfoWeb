@@ -1,155 +1,261 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Produit</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- JavaScripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-<head>
-  <meta charset="utf-8">
-  <title>Produit</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <!-- JavaScripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <meta
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+  </head>
 
-  <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
-    name="viewport" />
-
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img src="../img/logo_lego.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-      WebStore
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./produit.html">Produits</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./panier.html">Panier <span class="badge badge-secondary">2</span></a>
-        </li>
-      </ul>
-      <ul class="ml-auto">
-        <div class="form-inline">
-          <a class="btn btn-outline-secondary my-2 my-sm-0" href="./inscription.html"><i class="fas fa-user"></i>
-            Compte</a>
-        </div>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container p-4">
-    <!-- Développer la fiche produit ici -->
-    <div class="row">
-      <div class="col-lg-8">
-        <img src="../img/produit_newyork_0.jpeg" class="img-fluid mx-auto d-block " alt="Illustration">
-        <div class="row">
-          <div class="col-3">
-            <img src="../img/produit_newyork_0.jpeg" class="img-fluid mx-auto d-block mini p-3" alt="Miniature 1">
-          </div>
-          <div class="col-3">
-            <img src="../img/produit_newyork_1.jpeg" class="img-fluid mx-auto d-block mini p-3" alt="Miniature 2">
-          </div>
-          <div class="col-3">
-            <img src="../img/produit_newyork_2.jpeg" class="img-fluid mx-auto d-block mini p-3" alt="Miniature 3">
-          </div>
-          <div class="col-3">
-            <img src="../img/produit_newyork_3.jpeg" class="img-fluid mx-auto d-block  mini p-3" alt="Miniature 4">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <h3>LEGO Architecture <br /> New York City</h3>
-        <hr />
-        <p id="prix">49.99€</p>
-        <div class="alert alert-success">
-          En Stock
-        </div>
-        <div class="buttons">
-          <div class="text-right btns">
-            <button type="button" class="btn btn-outline-dark btnpls">-</button>
-            <button type="button" class="btn btn-outline-dark btnpls" disabled>1</button>
-            <button type="button" class="btn btn-outline-dark btnpls">+</button>
-          </div>
-          <div class="btns text-right">
-            <a href="#"><button type="button" class="btn btn-primary btn-lg addpnr">Ajouter au panier <i
-                  class="fas fa-cart-plus"></i></button></a>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../img/logo_lego.jpg"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          WebStore
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./produit.html">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./panier.html"
+                >Panier <span class="badge badge-secondary">2</span></a
+              >
+            </li>
+          </ul>
+          <div class="form-inline ml-auto">
+            <a
+              class="btn btn-outline-secondary my-2 my-sm-0 "
+              href="./inscription.html"
+              ><i class="fas fa-user"></i> Compte</a
+            >
           </div>
         </div>
-      </div>
-
+      </nav>
+    </header>
+    <div class="container p-4">
+      <!-- Développer la fiche produit ici -->
       <div class="row">
         <div class="col-lg-8">
-          <h3>Description du produit</h3>
-
-          <p>Fêtez la diversité architecturale de New York avec ce modèle détaillé en briques
-            <span class="lego">LEGO</span>. La collection <span class="lego">LEGO</span> Architecture Skyline offre des
-            modèles adaptés à
-            l'exposition à la maison et au bureau, et a été développée pour toutes les
-            personnes qui s'intéressent au voyage, à la création, à l'histoire et à
-            l'architecture.</p>
-
-          <p>Chaque ensemble a une échelle adaptée pour donner une idée précise de la taille
-            comparative de chaque structure, avec une représentation en couleurs réalistes.
-            Cet ensemble comprend le Flatiron Building, le Chrysler Building, l'Empire State
-            Building, le One World Trade Center et la Statue de la Liberté, et un écriteau
-            décoratif “New York”.</p>
-
-          <h3>Spécificités</h3>
-
-          <ul>
-            <li>Interprétation <span class="lego">LEGO</span> du paysage de New York.</li>
-            <li>Comprend le Flatiron Building, le Chrysler Building, l'Empire State Building,
-              le One World Trade Center et la Statue de la Liberté.</li>
-            <li>Inclut une plaque de base 4x32 avec un écriteau décoratif "New York".</li>
-            <li>Recréez les plus belles villes du monde avec la collection <span class="lego">LEGO</span> Architecture
-              Skyline.</li>
-            <li>Mesure 26 cm de haut, 25 cm de large et 4 cm de profondeur.</li>
-          </ul>
+          <img
+            src="../img/produit_newyork_0.jpeg"
+            class="img-fluid mx-auto d-block "
+            alt="Illustration"
+          />
+          <div class="row">
+            <div class="col-3">
+              <img
+                src="../img/produit_newyork_0.jpeg"
+                class="img-fluid mx-auto d-block mini p-3"
+                alt="Miniature 1"
+              />
+            </div>
+            <div class="col-3">
+              <img
+                src="../img/produit_newyork_1.jpeg"
+                class="img-fluid mx-auto d-block mini p-3"
+                alt="Miniature 2"
+              />
+            </div>
+            <div class="col-3">
+              <img
+                src="../img/produit_newyork_2.jpeg"
+                class="img-fluid mx-auto d-block mini p-3"
+                alt="Miniature 3"
+              />
+            </div>
+            <div class="col-3">
+              <img
+                src="../img/produit_newyork_3.jpeg"
+                class="img-fluid mx-auto d-block  mini p-3"
+                alt="Miniature 4"
+              />
+            </div>
+          </div>
         </div>
+
         <div class="col-lg-4">
-          <h3>Avis</h3>
-          <table>
-            <tr>
-              <td>
-                <img src="../img/avatar.png" class="avatar">
-                <p class="nom">Pierre</p>
-                <p class="date">26/12/2017</p>
-                <br />
-                <p class="avis">Construction trés agréable, les batiments sont beaux une fois terminés.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="../img/avatar.png" class="avatar">
-                <p class="nom">Paul</p>
-                <p class="date">26/12/2017</p>
-                <br />
-                <p class="avis">Le set est génial !!!!</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="../img/avatar.png" class="avatar">
-                <p class="nom">Jacques</p>
-                <p class="date">26/12/2017</p>
-                <br />
-                <p class="avis">Si vous aimez New York et les LEGO, foncez !</p>
-              </td>
-            </tr>
-          </table>
+          <h3>
+            LEGO Architecture <br />
+            New York City
+          </h3>
+          <hr />
+          <p id="prix">49.99€</p>
+          <div class="alert alert-success">
+            En Stock
+          </div>
+          <div class="buttons">
+            <div class="text-right btns">
+              <button type="button" class="btn btn-outline-dark btnpls">
+                -
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-dark btnpls"
+                disabled
+              >
+                1
+              </button>
+              <button type="button" class="btn btn-outline-dark btnpls">
+                +
+              </button>
+            </div>
+            <div class="btns text-right">
+              <a href="#"
+                ><button type="button" class="btn btn-primary btn-lg addpnr">
+                  Ajouter au panier <i class="fas fa-cart-plus"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <h3>Description du produit</h3>
+
+            <p>
+              Fêtez la diversité architecturale de New York avec ce modèle
+              détaillé en briques <span class="lego">LEGO</span>. La collection
+              <span class="lego">LEGO</span> Architecture Skyline offre des
+              modèles adaptés à l'exposition à la maison et au bureau, et a été
+              développée pour toutes les personnes qui s'intéressent au voyage,
+              à la création, à l'histoire et à l'architecture.
+            </p>
+
+            <p>
+              Chaque ensemble a une échelle adaptée pour donner une idée précise
+              de la taille comparative de chaque structure, avec une
+              représentation en couleurs réalistes. Cet ensemble comprend le
+              Flatiron Building, le Chrysler Building, l'Empire State Building,
+              le One World Trade Center et la Statue de la Liberté, et un
+              écriteau décoratif “New York”.
+            </p>
+
+            <h3>Spécificités</h3>
+
+            <ul>
+              <li>
+                Interprétation <span class="lego">LEGO</span> du paysage de New
+                York.
+              </li>
+              <li>
+                Comprend le Flatiron Building, le Chrysler Building, l'Empire
+                State Building, le One World Trade Center et la Statue de la
+                Liberté.
+              </li>
+              <li>
+                Inclut une plaque de base 4x32 avec un écriteau décoratif "New
+                York".
+              </li>
+              <li>
+                Recréez les plus belles villes du monde avec la collection
+                <span class="lego">LEGO</span> Architecture Skyline.
+              </li>
+              <li>
+                Mesure 26 cm de haut, 25 cm de large et 4 cm de profondeur.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h3>Avis</h3>
+            <table id="avis">
+              <tr>
+                <td>
+                  <img src="../img/avatar.png" class="avatar" />
+                  <p class="nom">Pierre</p>
+                  <p class="date">26/12/2017</p>
+                  <br />
+                  <p class="avis">
+                    Construction trés agréable, les batiments sont beaux une
+                    fois terminés.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="../img/avatar.png" class="avatar" />
+                  <p class="nom">Paul</p>
+                  <p class="date">26/12/2017</p>
+                  <br />
+                  <p class="avis">Le set est génial !!!!</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="../img/avatar.png" class="avatar" />
+                  <p class="nom">Jacques</p>
+                  <p class="date">26/12/2017</p>
+                  <br />
+                  <p class="avis">
+                    Si vous aimez New York et les LEGO, foncez !
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
+      <hr />
+      <footer>
+        <div class="row">
+          <div class="col-8">
+            <p>
+              <strong>LEGO WebStore</strong><br />
+              Maison de la recherche Blaise Pascal<br />
+              50 rue Ferdinand Buisson<br />
+              62100, Calais
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="ftright">
+              <img
+                src="../img/logo_lego.jpg"
+                width="70"
+                height="70"
+                class="d-inline-block align-top"
+                alt=""
+              />
+              <p>WebStore</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
