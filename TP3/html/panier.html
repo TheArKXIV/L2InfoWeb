@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
-    <link rel="stylesheet" href="../css/styles.css"/>
-    <!-- JavaScripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <!-- JavaScripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <title>Panier</title>
-  </head>
+  <title>Panier</title>
+</head>
 
-  <body>
+<body>
 
-    <!-- Ajouter la barre de menu -->
+  <!-- Ajouter la barre de menu -->
 
-    <div class="container p-3 p-md-5">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="../img/logo_lego.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+      WebStore
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./produit.html">Produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./panier.html">Panier <span class="badge badge-secondary">2</span></a>
+        </li>
+      </ul>
+      <div class="form-inline">
+        <a class="btn btn-outline-secondary my-2 my-sm-0 " href="./inscription.html"><i class="fas fa-user"></i>
+          Compte</a>
+      </div>
+    </div>
+  </nav>
 
-      <div class="row panier">
 
-        <!-- Articles contenus dans le panier -->
-        <div class="col-lg-6">
-          <h2>Articles contenus dans le panier</h2>
-        </div>
 
-        <!-- Descriptif du prix du panier -->
-        <div class="col-lg-6 align-self-end">
-          <h2>Descriptif du prix du panier</h2>
-        </div>
+  <div class="container p-3 p-md-5">
+
+    <div class="row panier">
+
+      <!-- Articles contenus dans le panier -->
+      <div class="col-lg-6">
+        <h2>Articles contenus dans le panier</h2>
       </div>
 
-      <!-- Ajouter le pied-de-page -->
-
+      <!-- Descriptif du prix du panier -->
+      <div class="col-lg-6 align-self-end">
+        <h2>Descriptif du prix du panier</h2>
+      </div>
     </div>
 
-  </body>
+    <!-- Ajouter le pied-de-page -->
+
+  </div>
+
+</body>
+
 </html>
