@@ -150,3 +150,20 @@ img{
  #panier, tr > *{
      vertical-align: top;
  }
+
+ .progressmdp {
+     height: 2px;
+    }
+
+.PsswdFrce{
+    font-size: 0.8em;
+    color: green;
+}
+
+.btnmenulogin{
+    color:  #6c757d;
+}
+
+.btnmenulogin:hover{
+    color: #343a40;
+}
