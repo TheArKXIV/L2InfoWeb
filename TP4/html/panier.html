@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Panier</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- JavaScripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <meta
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../img/logo_lego.jpg"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          WebStore
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./produit.html">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./panier.html"
+                >Panier <span class="badge badge-secondary">2</span></a
+              >
+            </li>
+          </ul>
+          <div class="form-inline ml-auto btnmenulogin">
+            <a
+              class="btn btn-outline-secondary my-2 my-sm-0"
+              data-toggle="modal"
+              data-target="#loginmodal"
+              ><i class="fas fa-user"></i> Compte</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container p-4">
+      <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Compte</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group row">
+                <div class="col-12">
+                  <input type="text" class="form-control" id="inputidentidiant" placeholder="Identifiant">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Mot de Passe">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12">
+                  <button type="submit" class="btn btn-secondary btn-block">Connexion</button>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <a href="./inscription.html" class="btn btn-primary btn-block" role="button">Inscription</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <table id="panier">
+            <tr class="panrow">
+              <td>
+                <img src="../img/produit_newyork_0.jpeg" class="imgprod" />
+                <p class="type">Lego Architecture</p>
+                <p class="produit">New York City</p>
+                <p class="qte">Quantité : 1</p>
+              </td>
+              <td>
+                <p class="pxart">49.99€</p>
+                <button type="button" class="btn btn-outline-danger delbtn">Supprimer <i class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr class="panrow">
+              <td>
+                <img src="../img/produit_londres_0.jpeg" class="imgprod" />
+                <p class="type">Lego Architecture</p>
+                <p class="produit">Londres</p>
+                <p class="qte">Quantité : 3</p>
+              </td>
+              <td>
+                <p class="pxart">49.99€</p>
+                <button type="button" class="btn btn-outline-danger delbtn">Supprimer <i class="far fa-trash-alt"></i></button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-6">
+          <h2>Panier</h2>
+          <table id="prix">
+            <tr>
+              <td>Prix du Panier</td>
+              <td class="prix">99.98 €</td>
+            </tr>
+            <tr id="tva">
+              <td>TVA (15%)</td>
+              <td class="prix">15 €</td>
+            </tr>
+            <tr id="total">
+              <td>Total</td>
+              <td class="prix">114.98 €</td>
+            </tr>
+          </table>
+          <div class="ftright">
+            <button type="button" class="btn btn-primary" id="buy">Acheter  <i class="fas fa-check"></i> </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <footer>
+        <div class="row">
+          <div class="col-8">
+            <p>
+              <strong>LEGO WebStore</strong><br />
+              Maison de la recherche Blaise Pascal<br />
+              50 rue Ferdinand Buisson<br />
+              62100, Calais
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="ftright">
+              <img
+                src="../img/logo_lego.jpg"
+                width="70"
+                height="70"
+                class="d-inline-block align-top"
+                alt=""
+              />
+              <p>WebStore</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

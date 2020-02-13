@@ -1,0 +1,169 @@
+/* Feuille de styles */
+p{
+    text-align: justify;
+}
+
+img{
+    margin: auto;
+    display: block;
+}
+
+.mini{
+    width:100%;
+    height: auto;
+    border-bottom: 6px solid transparent;
+}
+
+.mini:hover{
+    border-bottom: 6px solid;
+    border-color: #ddd;
+}
+
+#prix{
+    font-size: 2.5em;
+}
+
+.alert{
+    text-align: right;
+}
+
+.btns{
+    margin-bottom: 10px;
+}
+
+.btns .btnpls{
+    margin-right: 3px;
+    font-size: 0.8em;
+}
+
+.btns .addpnr{
+    font-size: 1em;
+}
+
+.avatar{
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-right: 1em;
+}
+
+#avis td{
+    padding: 10px;
+}
+
+#avis tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+#avis p{
+    margin-bottom: 5px;
+}
+
+.nom{
+    font-weight: bold;
+}
+
+.date{
+    font-style: italic;
+}
+
+.ftright{
+    display: block;
+    float: right;
+    text-align: center;
+}
+
+#prix{
+    width: 100%;
+    font-size: 1em;
+}
+
+#prix #tva{
+    font-size: 0.8em;;
+}
+
+#prix #total{
+    font-size: 1.3em ;
+}
+
+#prix tr{
+    border-top: 1px solid #ddd;
+}
+
+#prix {
+    margin-top: 20px;
+}
+
+#prix td{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.prix{
+    text-align: right;
+}
+
+.imgprod{
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-left: 1em;
+    margin-right: 2em;
+}
+
+#panier{
+    width: 100%;
+}
+#panier td{
+    padding: 10px;
+}
+
+#panier p{
+    margin: 0.3em;
+}
+
+.produit{
+    font-weight: bold;
+}
+
+.qte{
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#panier, .panrow {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+
+#panier td .pxart{
+    font-size: 1.5em;
+    text-align: right;
+ }
+
+ .delbtn{
+    margin-top: 2.5em;
+ }
+
+ #panier, tr > *{
+     vertical-align: top;
+ }
+
+ .progressmdp {
+     height: 2px;
+    }
+
+.PsswdFrce{
+    font-size: 0.8em;
+    color: green;
+}
+
+.btnmenulogin{
+    color:  #6c757d;
+}
+
+.btnmenulogin:hover{
+    color: #343a40;
+}
