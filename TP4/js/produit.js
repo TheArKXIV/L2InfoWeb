@@ -1,5 +1,3 @@
-console.log('Hello world :) !');
-
 $(document).ready(function(){
     $('#incqtt').click(function() {
         $('#quantity').val( function(i, oldval) {
@@ -16,4 +14,12 @@ $(document).ready(function(){
             $('#quantity').html(parseInt($('#quantity').html(), 10)-1)
         }
     })
+
+    $('.mini').click(function() {
+        var loc = $(this).attr("src");
+        $('#grd').attr("src",loc);
+    });
+
+
+
 });

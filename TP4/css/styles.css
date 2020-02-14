@@ -129,7 +129,7 @@ img{
     font-size: 0.9em;
 }
 
-#panier, .panrow {
+#panier tbody, .panrow {
     border: 1px solid #ddd;
     border-collapse: collapse;
   }

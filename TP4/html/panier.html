@@ -17,6 +17,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="../js/panier.js"></script>
+
 
     <meta
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
@@ -108,14 +110,15 @@
         <div class="col-lg-6">
           <table id="panier">
             <tr class="panrow">
+              <tbody>
               <td>
                 <img src="../img/produit_newyork_0.jpeg" class="imgprod" />
                 <p class="type">Lego Architecture</p>
                 <p class="produit">New York City</p>
-                <p class="qte">Quantité : 1</p>
+                <p class="qte">Quantité : <span class="qtt">1</span></p>
               </td>
               <td>
-                <p class="pxart">49.99€</p>
+                <p class="pxart"><span class="px">49.99</span>€</p>
                 <button type="button" class="btn btn-outline-danger delbtn">Supprimer <i class="far fa-trash-alt"></i></button>
               </td>
             </tr>
@@ -124,13 +127,14 @@
                 <img src="../img/produit_londres_0.jpeg" class="imgprod" />
                 <p class="type">Lego Architecture</p>
                 <p class="produit">Londres</p>
-                <p class="qte">Quantité : 3</p>
+                <p class="qte">Quantité : <span class="qtt">3</span></p>
               </td>
               <td>
-                <p class="pxart">49.99€</p>
+                <p class="pxart"><span class="px">49.99</span>€</p>
                 <button type="button" class="btn btn-outline-danger delbtn">Supprimer <i class="far fa-trash-alt"></i></button>
               </td>
             </tr>
+          </tbody>
           </table>
         </div>
         <div class="col-lg-6">
@@ -138,15 +142,15 @@
           <table id="prix">
             <tr>
               <td>Prix du Panier</td>
-              <td class="prix">99.98 €</td>
+              <td class="prix" id="pxpan"></td>
             </tr>
             <tr id="tva">
-              <td>TVA (15%)</td>
-              <td class="prix">15 €</td>
+              <td>TVA (<span id="tvamnt">15</span>%)</td>
+              <td class="prix" id="pxtva"></td>
             </tr>
             <tr id="total">
               <td>Total</td>
-              <td class="prix">114.98 €</td>
+              <td class="prix" id="pxttl"></td>
             </tr>
           </table>
           <div class="ftright">
