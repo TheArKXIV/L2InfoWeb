@@ -177,3 +177,7 @@ img{
 #avinput{
     margin-top: 10px;
 }
+
+#forcebar, #PsswdFrce{
+    display: none;
+}
