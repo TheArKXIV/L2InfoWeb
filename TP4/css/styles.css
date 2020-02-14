@@ -14,9 +14,19 @@ img{
     border-bottom: 6px solid transparent;
 }
 
+
+
 .mini:hover{
     border-bottom: 6px solid;
     border-color: #ddd;
+}
+
+.selected{
+    border-bottom: 6px solid #007bff;
+}
+
+.selected:hover{
+    border-bottom: 6px solid #007bff;
 }
 
 .alert{
@@ -162,4 +172,8 @@ img{
 
 .btnmenulogin:hover{
     color: #343a40;
+}
+
+#avinput{
+    margin-top: 10px;
 }
